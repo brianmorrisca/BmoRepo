@@ -1,0 +1,30 @@
+/* BORDER BOX RESET */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* select all classes with col- */
+[class*='col-'] {
+	float:left;
+	padding:10px;
+}
+
+[class*='col-']:last-of-type {
+	padding-right:10px;
+	float:right;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+
+.cf:after {
+	clear:both;
+}

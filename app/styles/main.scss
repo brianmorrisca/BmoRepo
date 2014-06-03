@@ -1,3 +1,24 @@
+/*****************************************************************************
+  bourbon test
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
 
 
 /* BEGIN CSS RESET */
@@ -47,6 +68,9 @@ table {
 }
 
 /* END RESET */
+
+/* RESPONSIVE */
+
 
 /*  GRID OF TWELVE   ============================================================================= */
 
@@ -160,41 +184,40 @@ table {
 
 html { height:100%;}
 
-body { font-family: sans-serif;
+body { height:100%; font-family: sans-serif;
 background: #d4e4ef; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q0ZTRlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NmFlY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 background: -moz-linear-gradient(top,  #d4e4ef 0%, #86aecc 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4e4ef), color-stop(100%,#86aecc)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #d4e4ef 0%,#86aecc 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 ); /* IE6-8 */
 
 }
 
 h1, h2 { font-family: sans-serif; }
 
-#container { width:90%; margin:0 auto; }
+#container { width:90%; margin:0 auto; max-width:1080px;}
+h2 { font-size:1.2em; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid black; }
 
-header { padding:30px 0 20px 0; margin-bottom:50px; overflow: auto;}
+header { padding:30px 0 20px 0; margin-bottom:40px; overflow: auto; }
+.logo { float:left; }
 header h1 { font-size:2em; }
 
-nav { border-bottom: 1px solid #ccc; overflow:auto;}
-nav ul { float:right; }
+nav { }
+nav ul { float:right; padding-top:5px; }
 nav li { display:block; float:left; margin-right:20px; }
 nav a { text-decoration: none; border: 1px solid rgba(0,0,0,0); padding:5px; }
 nav a:hover { border:1px dotted #00B233; }
 
-#focus { padding:3%;}
+#focus { padding:70px 2em 0 2em;}
 
-article { background:#222; margin-bottom: 20px; overflow: auto; }
-.desc { float:right; }
-article h2 { font-size: 1.2em; margin-bottom:1em; padding-top:5px; }
+article { margin-bottom: 20px; overflow: auto; }
+.desc { float:left; padding-left:30px; }
+article h2 { font-size: 1.2em; margin-bottom:1em; padding-top:5px; border:0; }
 figure { }
 figure img { float:left; opacity:0.6; max-width:100%; height:auto;}
-figure:hover img { 
+figure:hover img {
 opacity:1; 
 -moz-transition-property: all;
 -webkit-transition-property: all;
@@ -204,6 +227,7 @@ transition-property: all;
 -webkit-transition-duration: 0.45s;
 -o-transition-duration: 0.45s;
 transition-duration: 0.45s;
+-webkit-backface-visibility: hidden;
 }
 article a { color: #999; text-decoration: none; }
 article a:hover { 
@@ -216,9 +240,21 @@ transition-property: all;
 -webkit-transition-duration: 0.45s;
 -o-transition-duration: 0.45s;
 transition-duration: 0.45s;
+-webkit-backface-visibility: hidden;
 }
 
 
+.right { float:right; clear:right; }
 .right-section { padding:3%; clear:right; float:right; background-color:#ccc; margin-bottom:20px;}
 
 footer { margin-top:50px; padding:20px 0; border-top:1px dotted #fff; }
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+
+

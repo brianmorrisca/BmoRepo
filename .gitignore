@@ -1,1 +1,9 @@
 img/
+old-with-bourbon-install/
+bower_components/
+bower.json
+Gruntfile.js
+node_modules
+package.json
+.tmp/
+app/images/

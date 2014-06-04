@@ -1,0 +1,282 @@
+/*****************************************************************************
+  bourbon test
+******************************************************************************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+/* BEGIN CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* END RESET */
+/* RESPONSIVE */
+/*  GRID OF TWELVE   ============================================================================= */
+.span_12_of_12 {
+  width: 100%; }
+
+.span_11_of_12 {
+  width: 91.53%; }
+
+.span_10_of_12 {
+  width: 83.06%; }
+
+.span_9_of_12 {
+  width: 74.6%; }
+
+.span_8_of_12 {
+  width: 66.13%; }
+
+.span_7_of_12 {
+  width: 57.66%; }
+
+.span_6_of_12 {
+  width: 49.2%; }
+
+.span_5_of_12 {
+  width: 40.73%; }
+
+.span_4_of_12 {
+  width: 32.26%; }
+
+.span_3_of_12 {
+  width: 23.8%; }
+
+.span_2_of_12 {
+  width: 15.33%; }
+
+.span_1_of_12 {
+  width: 6.86%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .span_12_of_12 {
+    width: 100%; }
+
+  .span_11_of_12 {
+    width: 100%; }
+
+  .span_10_of_12 {
+    width: 100%; }
+
+  .span_9_of_12 {
+    width: 100%; }
+
+  .span_8_of_12 {
+    width: 100%; }
+
+  .span_7_of_12 {
+    width: 100%; }
+
+  .span_6_of_12 {
+    width: 100%; }
+
+  .span_5_of_12 {
+    width: 100%; }
+
+  .span_4_of_12 {
+    width: 100%; }
+
+  .span_3_of_12 {
+    width: 100%; }
+
+  .span_2_of_12 {
+    width: 100%; }
+
+  .span_1_of_12 {
+    width: 100%; } }
+/*END RESPONSIVE */
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: sans-serif;
+  background: #d4e4ef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* IE10+ */
+  background: linear, to bottom, #d4e4ef 0%, #86aecc 100%;
+  /* W3C */ }
+
+h1, h2 {
+  font-family: sans-serif; }
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1080px; }
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black; }
+
+header {
+  padding: 30px 0 20px 0;
+  margin-bottom: 40px;
+  overflow: auto; }
+
+.logo {
+  float: left; }
+
+header h1 {
+  font-size: 2em; }
+
+nav ul {
+  float: right;
+  padding-top: 5px; }
+
+nav li {
+  display: block;
+  float: left;
+  margin-right: 20px; }
+
+nav a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px; }
+
+nav a:hover {
+  border: 1px dotted #00B233; }
+
+#focus {
+  padding: 70px 2em 0 2em; }
+
+article {
+  margin-bottom: 20px;
+  overflow: auto; }
+
+.desc {
+  float: left;
+  padding-left: 30px; }
+
+article h2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding-top: 5px;
+  border: 0; }
+
+figure img {
+  float: left;
+  opacity: 0.6;
+  max-width: 100%;
+  height: auto; }
+
+figure:hover img {
+  opacity: 1;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.45s;
+  -webkit-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  -webkit-backface-visibility: hidden; }
+
+article a {
+  color: #999;
+  text-decoration: none; }
+
+article a:hover {
+  color: #fff;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.45s;
+  -webkit-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  -webkit-backface-visibility: hidden; }
+
+.right {
+  float: right;
+  clear: right; }
+
+.right-section {
+  padding: 3%;
+  clear: right;
+  float: right;
+  background-color: #ccc;
+  margin-bottom: 20px; }
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  border-top: 1px dotted #fff; }
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/

@@ -11,6 +11,7 @@
   Variables
 ******************************************************************************/
 
+$section-border: 1px solid #888;
 $img-border: 1px solid #888;
 
 /*****************************************************************************
@@ -219,7 +220,7 @@ background: linear-gradient(to bottom,  #d4e4ef 0%,#86aecc 100%); /* W3C */
 h1, h2 { font-family: sans-serif; }
 
 #container { width:90%; margin:0 auto; max-width:1080px;}
-h2 { font-size:1.2em; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid black; }
+h2 { font-size:1.2em; margin-bottom:20px; padding-bottom:10px; border-bottom:$section-border; }
 
 header { padding:30px 0 20px 0; margin-bottom:40px; overflow: auto; }
 .logo { float:left; }
@@ -270,15 +271,16 @@ transition-duration: 0.45s;
 
 .right { float:right; clear:right; }
 .right-section { padding:3%; clear:right; float:right; background-color:#ccc; margin-bottom:20px;}
+.right-section li { margin-bottom:5px; }
 
+#contact { padding-bottom:20px; overflow: auto;}
+#contact form {float:left; width:50%; background-color:#ccc;}
+#contact form textarea {width:100%; height:4rem;}
 .social-section { clear:right; float:right;}
 .social { float:right; margin-right:5px; background-color:tomato; border-bottom:0; border-radius: 50%; padding:10px;}
 .social:hover { background-color:green; cursor:pointer;	}
 
-
-#contact { padding-bottom:20px; overflow: auto;}
-
-footer { clear:both; margin-top:50px; padding:20px 0; border-top:1px dotted #000; }
+footer { clear:both; margin-top:50px; padding:20px 0; border-top:$section-border; }
 
 
 

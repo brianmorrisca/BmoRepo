@@ -7,8 +7,11 @@
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
 
+/*****************************************************************************
+  Variables
+******************************************************************************/
 
-
+$img-border: 1px solid #888;
 
 /*****************************************************************************
   Base Styles
@@ -18,8 +21,26 @@
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
+/* http://www.smacss.com
+/* Layout styles are structural style rules for the bones
+/* display, position, margin, overflow, width, height
+
+/*
+.constrained {
+	max-width: 1080px;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 
+Using sass  "&" replaces the parent selector, example:
+
+.liststyle {
+	
+	& > li {}
+} /* & = liststyle
+
+*/
 
 /* BEGIN CSS RESET */
 
@@ -182,7 +203,7 @@ table {
 	box-sizing:border-box;
 }
 
-html { height:100%;}
+html { height:100%; min-height: 100%; }
 
 body { height:100%; font-family: sans-serif;
 background: #d4e4ef; /* Old browsers */
@@ -213,9 +234,10 @@ nav a:hover { border:1px dotted #00B233; }
 #focus { padding:70px 2em 0 2em;}
 
 article { margin-bottom: 20px; overflow: auto; }
-.desc { float:left; padding-left:30px; }
+.desc { float:left; padding-left:1em; }
 article h2 { font-size: 1.2em; margin-bottom:1em; padding-top:5px; border:0; }
-figure { }
+figure { float: left; }
+figure a { display:table; border:$img-border; }
 figure img { float:left; opacity:0.6; max-width:100%; height:auto;}
 figure:hover img {
 opacity:1; 
@@ -229,6 +251,8 @@ transition-property: all;
 transition-duration: 0.45s;
 -webkit-backface-visibility: hidden;
 }
+figure h3 { border-top:$img-border; clear:left; float: left; background-color:#ccc; padding:5px; text-align: center;}
+
 article a { color: #999; text-decoration: none; }
 article a:hover { 
 color:#fff;
@@ -247,7 +271,14 @@ transition-duration: 0.45s;
 .right { float:right; clear:right; }
 .right-section { padding:3%; clear:right; float:right; background-color:#ccc; margin-bottom:20px;}
 
-footer { margin-top:50px; padding:20px 0; border-top:1px dotted #fff; }
+.social-section { clear:right; float:right;}
+.social { float:right; margin-right:5px; background-color:tomato; border-bottom:0; border-radius: 50%; padding:10px;}
+.social:hover { background-color:green; cursor:pointer;	}
+
+
+#contact { padding-bottom:20px; overflow: auto;}
+
+footer { clear:both; margin-top:50px; padding:20px 0; border-top:1px dotted #000; }
 
 
 

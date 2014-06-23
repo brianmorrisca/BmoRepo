@@ -6,5 +6,4 @@ Gruntfile.js
 node_modules
 package.json
 .tmp/
-app/images/
 app/styles/.sass-cache/

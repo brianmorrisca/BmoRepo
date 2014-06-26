@@ -120,42 +120,67 @@ table {
 	box-sizing:border-box;
 }
 
-html { height:100%; min-height: 100%; }
-
-body { height:100%; font-family: sans-serif;
-background: #d4e4ef; /* Old browsers */
-background: -moz-linear-gradient(top,  #d4e4ef 0%, #86aecc 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4e4ef), color-stop(100%,#86aecc)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #d4e4ef 0%,#86aecc 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #d4e4ef 0%,#86aecc 100%); /* W3C */
-
+html { 
+	height:100%; 
+	min-height: 100%; 
 }
 
-#container { @include outer-container; }
+body {
+	height:100%; 
+	font-family: sans-serif;
+}
+
+#container { 
+	@include outer-container; 
+}
 
 
 h1, h2 { font-family: sans-serif; }
 
-h2 { font-size:1.2em; margin-bottom:20px; padding-bottom:10px; border-bottom:$section-border; }
+h2 { 
+	font-size:1.2em; 
+	margin-bottom:20px; 
+	padding-bottom:10px; 
+	border-bottom:$section-border; 
+}
 
 header {
 	@include span-columns(12);
 	padding:30px 0 20px 0; 
 	margin-bottom:40px; 
-	overflow: auto; }
+}
 
-.logo { float:left; }
-header h1 { font-size:2em; }
+.logo {
+	font-size: 1.8em;
+	float:left; 
+}
+
 
 nav { }
-nav ul { float:right; padding-top:5px; }
-nav li { display:block; float:left; margin-right:20px; }
-nav a { text-decoration: none; border: 1px solid rgba(0,0,0,0); padding:5px; }
-nav a:hover { border:1px dotted #00B233; }
+nav ul { 
+	float:right; 
+	padding-top:5px; 
+}
+nav li { 
+	display:block; 
+	float:left; 
+	margin-right:20px; 
+}
+nav a { 
+	text-decoration: none; 
+	border: 1px solid rgba(0,0,0,0); 
+	padding:5px; 
+}
+nav a:hover { 
+	border:1px dotted #00B233; 
+}
 
-#focus { padding:70px 2em 0 2em;}
+#focus { 
+	padding:70px 2em 0 2em;
+}
+#focus h1 { 
+	font-size:1.3em; 
+}
 
 section {
 	
@@ -175,8 +200,16 @@ article {
 	float:left;
 	margin-bottom: 1em;
 }
-article h2 { font-size: 1.2em; margin-bottom:1em; padding-top:5px; border:0; }
-article a { color: #999; text-decoration: none; }
+article h2 { 
+	font-size: 1.2em; 
+	margin-bottom:1em; 
+	padding-top:5px; 
+	border:0; 
+}
+article a { 
+	color: #999; 
+	text-decoration: none; 
+}
 article a:hover { 
 	color:#fff;
 }
@@ -213,14 +246,42 @@ figure h3 {
 }
 
 
-#contact { padding-bottom:20px; overflow: auto;}
-#contact form {float:left; width:50%; background-color:#ccc;}
-#contact form textarea {width:100%; height:4rem;}
-.social-section { clear:right; float:right;}
-.social { float:right; margin-right:5px; background-color:#ccc; border-bottom:0; border-radius: 50%; padding:10px;}
-.social:hover { background-color:green; cursor:pointer;	}
+#contact { 
+	@include span-columns(12);
+	padding-bottom:20px;
+}
+#contact form {
+	float:left; 
+	width:50%; 
+	background-color:#ccc;
+}
+#contact form textarea {
+	width:100%; 
+	height:4rem;
+}
+.social-section { 
+	clear:right; 
+	float:right;
+}
+.social { 
+	float:right; 
+	margin-right:5px; 
+	background-color:#ccc; 
+	border-bottom:0; 
+	border-radius: 50%; 
+	padding:10px;
+}
+.social:hover { 
+	background-color:green; 
+	cursor:pointer;	
+}
 
-footer { clear:both; margin-top:50px; padding:20px 0; border-top:$section-border; }
+footer { 
+	clear:both; 
+	margin-top:50px; 
+	padding:20px 0; 
+	border-top:$section-border; 
+}
 
 
 
